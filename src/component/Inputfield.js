@@ -1,9 +1,9 @@
 import React from "react";
 
-function Inputfield() {
+function Inputfield({ n2 }) {
   return (
     <div>
-      <input type="text"></input>
+      <input type="text" value={n2}></input>
     </div>
   );
 }

@@ -1,31 +1,31 @@
 import React from "react";
 import styles from "./Button.module.css";
-function Button() {
+function Button({ handleClick }) {
   return (
     <div>
       <div>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>+</button>
+        <button onClick={() => handleClick("7")}>7</button>
+        <button onClick={() => handleClick("8")}>8</button>
+        <button onClick={() => handleClick("9")}>9</button>
+        <button onClick={() => handleClick("+")}>+</button>
       </div>
       <div>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>-</button>
+        <button onClick={() => handleClick("4")}>4</button>
+        <button onClick={() => handleClick("5")}>5</button>
+        <button onClick={() => handleClick("6")}>6</button>
+        <button onClick={() => handleClick("-")}>-</button>
       </div>
       <div>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>*</button>
+        <button onClick={() => handleClick("1")}>1</button>
+        <button onClick={() => handleClick("2")}>2</button>
+        <button onClick={() => handleClick("3")}>3</button>
+        <button onClick={() => handleClick("*")}>*</button>
       </div>
       <div>
-        <button>C</button>
-        <button>0</button>
-        <button>=</button>
-        <button>/</button>
+        <button onClick={() => handleClick("C")}>C</button>
+        <button onClick={() => handleClick("0")}>0</button>
+        <button onClick={() => handleClick("=")}>=</button>
+        <button onClick={() => handleClick("/")}>/</button>
       </div>
     </div>
   );
